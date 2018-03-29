@@ -26,8 +26,8 @@ GameObject:
   m_Component:
   - component: {fileID: 400002}
   - component: {fileID: 19800002}
+  - component: {fileID: 114660990618282134}
   - component: {fileID: 19900002}
-  - component: {fileID: 114473065435282286}
   m_Layer: 0
   m_Name: sparklesRot
   m_TagString: Untagged
@@ -75,6 +75,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 400008}
+  - component: {fileID: 114156041061268908}
   m_Layer: 0
   m_Name: SkillOneEffect
   m_TagString: ground
@@ -304,7 +305,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: 197783954
+  randomSeed: 776652138
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -3575,7 +3576,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: -1618249927
+  randomSeed: 1959082643
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -6882,7 +6883,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: -448522672
+  randomSeed: 33377172
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -10258,7 +10259,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: 1522015400
+  randomSeed: -1617992931
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -13529,7 +13530,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: -1696944171
+  randomSeed: 573732500
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -16800,7 +16801,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: -798963942
+  randomSeed: -973970359
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -20346,7 +20347,19 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100008}
   m_IsPrefabParent: 1
---- !u!114 &114473065435282286
+--- !u!114 &114156041061268908
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21373eea11f85ec4098e4136cc9dd019, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 2
+--- !u!114 &114660990618282134
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -20354,9 +20367,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 100002}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6be4f257280c44a199c30ae2a016e48, type: 3}
+  m_Script: {fileID: 11500000, guid: c9a43d47f13c5af4dad0a2f8a8a777e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeedX: 0
-  rotationSpeedY: 0
-  rotationSpeedZ: 270
+  x: 0
+  y: 0
+  z: 270

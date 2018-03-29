@@ -26,6 +26,9 @@ GameObject:
   m_Component:
   - component: {fileID: 400002}
   - component: {fileID: 82664452573991536}
+  - component: {fileID: 114836755749717436}
+  - component: {fileID: 114703761579398576}
+  - component: {fileID: 114288227001251828}
   m_Layer: 0
   m_Name: pentagramRitual
   m_TagString: ground
@@ -94,7 +97,7 @@ GameObject:
   - component: {fileID: 400010}
   - component: {fileID: 19800008}
   - component: {fileID: 19900008}
-  - component: {fileID: 114529841502896720}
+  - component: {fileID: 114428339249574328}
   m_Layer: 0
   m_Name: redBurningSmoke
   m_TagString: Untagged
@@ -245,7 +248,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: 1072552465
+  randomSeed: -1108637688
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -3609,7 +3612,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: 2088444584
+  randomSeed: 1503167267
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -6949,7 +6952,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: -637087823
+  randomSeed: 81017633
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -10283,7 +10286,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: 1355119146
+  randomSeed: 1381156830
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -13605,7 +13608,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: 27860849
+  randomSeed: -1290228140
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -17240,7 +17243,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &114529841502896720
+--- !u!114 &114288227001251828
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b9d2fe3d4d1bc4391a211c43f0f910, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114428339249574328
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -17248,9 +17262,32 @@ MonoBehaviour:
   m_GameObject: {fileID: 100010}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6be4f257280c44a199c30ae2a016e48, type: 3}
+  m_Script: {fileID: 11500000, guid: c9a43d47f13c5af4dad0a2f8a8a777e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeedX: 0
-  rotationSpeedY: 0
-  rotationSpeedZ: 360
+  x: 0
+  y: 0
+  z: 360
+--- !u!114 &114703761579398576
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 975fb517bf8632146b84adb666de56bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114836755749717436
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21373eea11f85ec4098e4136cc9dd019, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 1

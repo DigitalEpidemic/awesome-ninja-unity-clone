@@ -94,6 +94,9 @@ GameObject:
   m_Component:
   - component: {fileID: 400008}
   - component: {fileID: 8200000}
+  - component: {fileID: 114623591130505610}
+  - component: {fileID: 114680878309504650}
+  - component: {fileID: 114047606197718174}
   m_Layer: 0
   m_Name: fireBallBase
   m_TagString: missile
@@ -14022,3 +14025,37 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100010}
   m_IsPrefabParent: 1
+--- !u!114 &114047606197718174
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff9aa2a2741aa7f46a75cd273218460b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114623591130505610
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21373eea11f85ec4098e4136cc9dd019, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 5
+--- !u!114 &114680878309504650
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b0c3377fc6c7d543bc6e5467069afb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

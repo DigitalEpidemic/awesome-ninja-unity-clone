@@ -8,9 +8,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 400000}
-  - component: {fileID: 114305039886969134}
-  - component: {fileID: 114861503730213252}
-  - component: {fileID: 114063200139960944}
+  - component: {fileID: 114103584742758114}
+  - component: {fileID: 114871346625431862}
   m_Layer: 0
   m_Name: DamagePoint
   m_TagString: Untagged
@@ -162,6 +161,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 400018}
+  - component: {fileID: 114049833601488526}
   m_Layer: 0
   m_Name: lightningBoltBase 1
   m_TagString: explosion
@@ -31232,7 +31232,19 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100018}
   m_IsPrefabParent: 1
---- !u!114 &114063200139960944
+--- !u!114 &114049833601488526
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21373eea11f85ec4098e4136cc9dd019, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 1
+--- !u!114 &114103584742758114
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -31240,17 +31252,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 347dc17154cd44d0eb8d504534389079, type: 3}
+  m_Script: {fileID: 11500000, guid: 975fb517bf8632146b84adb666de56bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bossLayer:
-    m_Bits: 2048
-  radius: 4
-  collided: 0
-  damageCount: 10
-  attackTarget: {fileID: 0}
-  damageEffect: {fileID: 100010, guid: eff3c99881b6c5c4bac5fe6d942fe34e, type: 2}
---- !u!114 &114305039886969134
+--- !u!114 &114871346625431862
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -31258,25 +31263,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f8c9f81070ba4fdc8a72e26de8fadbc, type: 3}
+  m_Script: {fileID: 11500000, guid: 02b9d2fe3d4d1bc4391a211c43f0f910, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zombieLayer:
-    m_Bits: 1024
-  radius: 4
-  collided: 0
-  damageCount: 100
-  attackTarget: {fileID: 0}
-  damageEffect: {fileID: 100010, guid: eff3c99881b6c5c4bac5fe6d942fe34e, type: 2}
---- !u!114 &114861503730213252
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59dd36b8d4bb24c2aa3bb621a178d02e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  time: 0.5

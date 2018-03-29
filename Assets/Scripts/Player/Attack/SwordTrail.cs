@@ -15,7 +15,7 @@ public class SwordTrail : MonoBehaviour {
 
 	public AudioClip swordHit1;
 	public AudioClip swordHit2;
-	public AudioClip earthHitMusic;
+	public AudioClip earthHitSound;
 	public AudioClip jiaoHanSheng;
 
 	void Awake () {
@@ -72,7 +72,7 @@ public class SwordTrail : MonoBehaviour {
 	void SlashThreeEffect (bool show) {
 		if (show) {
 			Instantiate (slashThreeEffectPrefab, slashThreePoint.position, slashThreePoint.rotation);
-			audioSource.PlayOneShot (earthHitMusic);
+			audioSource.PlayOneShot (earthHitSound);
 		}
 	}
 

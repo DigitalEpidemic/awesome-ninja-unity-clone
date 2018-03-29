@@ -318,6 +318,7 @@ GameObject:
   - component: {fileID: 114600536202838844}
   - component: {fileID: 114530846610227122}
   - component: {fileID: 114983878601885454}
+  - component: {fileID: 114812838303902910}
   m_Layer: 0
   m_Name: Ninja
   m_TagString: Untagged
@@ -679,7 +680,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4832497578624966}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 10.581193, y: -158.82355, z: -9.821698}
+  m_LocalEulerAnglesHint: {x: 4.3847675, y: -124.82695, z: -8.438087}
 --- !u!4 &4160472759015052
 Transform:
   m_ObjectHideFlags: 1
@@ -1408,6 +1409,20 @@ MonoBehaviour:
   walkingSpeed: 5
   walkingSnappiness: 50
   turningSmoothing: 0.3
+--- !u!114 &114812838303902910
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1550072533093850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b19adf659a2ac70498d118ca11a36f17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animatorController: {fileID: 9100000, guid: 8db498fa3564d0c49914eaba533aef2f, type: 2}
+  animator: {fileID: 95826582448277382}
+  emitType: 0
 --- !u!114 &114966520815596790
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1449,7 +1464,7 @@ MonoBehaviour:
   slashThreePoint: {fileID: 4979985641369010}
   swordHit1: {fileID: 8300000, guid: 70e5d3a1eb6cc9245a3b01c7d0014f91, type: 3}
   swordHit2: {fileID: 8300000, guid: 70e5d3a1eb6cc9245a3b01c7d0014f91, type: 3}
-  earthHitMusic: {fileID: 8300000, guid: bdcc99fa2661cb84b8d2919dc6348500, type: 3}
+  earthHitSound: {fileID: 8300000, guid: bdcc99fa2661cb84b8d2919dc6348500, type: 3}
   jiaoHanSheng: {fileID: 8300000, guid: 15390fbf7b0ec0a4ba58426f7e78059f, type: 3}
 --- !u!137 &137774248904242256
 SkinnedMeshRenderer:

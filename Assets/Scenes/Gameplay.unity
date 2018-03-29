@@ -20,11 +20,11 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientSkyColor: {r: 0.1, g: 0.1, b: 0.1, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
+  m_AmbientMode: 4
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
@@ -113,11 +113,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!4 &463641291 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4177721830388792, guid: 33b559ad0643aa745a343d18b9f57664,
-    type: 2}
-  m_PrefabInternal: {fileID: 790865814}
 --- !u!1 &684568645
 GameObject:
   m_ObjectHideFlags: 0
@@ -183,34 +178,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &755419215
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 755419216}
-  m_Layer: 0
-  m_Name: Slash Three Point
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &755419216
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 755419215}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 463641291}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &790865814
 Prefab:
   m_ObjectHideFlags: 0
@@ -250,41 +217,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 114983878601885454, guid: 33b559ad0643aa745a343d18b9f57664,
-        type: 2}
-      propertyPath: hitPoint
-      value: 
-      objectReference: {fileID: 1377499950}
-    - target: {fileID: 114983878601885454, guid: 33b559ad0643aa745a343d18b9f57664,
-        type: 2}
-      propertyPath: slashThreeEffectPrefab
-      value: 
-      objectReference: {fileID: 100014, guid: 2f8ef9eb56c6f1d46a58225698863a6f, type: 2}
-    - target: {fileID: 114983878601885454, guid: 33b559ad0643aa745a343d18b9f57664,
-        type: 2}
-      propertyPath: slashThreePoint
-      value: 
-      objectReference: {fileID: 755419216}
-    - target: {fileID: 114983878601885454, guid: 33b559ad0643aa745a343d18b9f57664,
-        type: 2}
-      propertyPath: swordHit1
-      value: 
-      objectReference: {fileID: 8300000, guid: 70e5d3a1eb6cc9245a3b01c7d0014f91, type: 3}
-    - target: {fileID: 114983878601885454, guid: 33b559ad0643aa745a343d18b9f57664,
-        type: 2}
-      propertyPath: swordHit2
-      value: 
-      objectReference: {fileID: 8300000, guid: 70e5d3a1eb6cc9245a3b01c7d0014f91, type: 3}
-    - target: {fileID: 114983878601885454, guid: 33b559ad0643aa745a343d18b9f57664,
-        type: 2}
-      propertyPath: earthHitMusic
-      value: 
-      objectReference: {fileID: 8300000, guid: bdcc99fa2661cb84b8d2919dc6348500, type: 3}
-    - target: {fileID: 114983878601885454, guid: 33b559ad0643aa745a343d18b9f57664,
-        type: 2}
-      propertyPath: jiaoHanSheng
-      value: 
-      objectReference: {fileID: 8300000, guid: 15390fbf7b0ec0a4ba58426f7e78059f, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 33b559ad0643aa745a343d18b9f57664, type: 2}
   m_IsPrefabParent: 0
@@ -372,11 +304,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1153027533}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1377499950 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1349583260528046, guid: 33b559ad0643aa745a343d18b9f57664,
-    type: 2}
-  m_PrefabInternal: {fileID: 790865814}
 --- !u!1 &1981410336
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,6 +316,7 @@ GameObject:
   - component: {fileID: 1981410338}
   - component: {fileID: 1981410337}
   - component: {fileID: 1981410341}
+  - component: {fileID: 1981410342}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -471,3 +399,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offset: {x: 3, y: 7.5, z: -3}
+--- !u!114 &1981410342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1981410336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d7e937c2bb40f6409b631cc0f44074b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dataSource: {fileID: 114055661405239080, guid: 4faa44fdf7d813e4bafc07b1c7ad87ae,
+    type: 2}
+  dataSources: []

@@ -10150,3 +10150,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3f57463df336bb4cb43943382c7ab58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  skillPrefabs:
+  - {fileID: 100002, guid: 3537826941f13d8448e00a0558ded789, type: 2}
+  thisManyTimes: 15
+  overThisTime: 0.75
+  x_Width: 1
+  y_Width: 0
+  z_Width: 1
+  x_RotationMax: 20
+  y_RotationMax: 180
+  z_RotationMax: 20
+  allUseSameRotation: 0

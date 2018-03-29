@@ -132,6 +132,7 @@ public class PlayerAttacks : MonoBehaviour {
 
 	IEnumerator SkillOneCoroutine () {
 		yield return new WaitForSeconds (1.5f);
+		audioSource.PlayOneShot (skillOne_Sound2);
 		Instantiate (skillOne_DamagePrefab, skillOne_Point1.position, skillOne_Point1.rotation);
 		Instantiate (skillOne_DamagePrefab, skillOne_Point2.position, skillOne_Point2.rotation);
 		Instantiate (skillOne_DamagePrefab, skillOne_Point3.position, skillOne_Point3.rotation);

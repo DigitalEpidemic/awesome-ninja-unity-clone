@@ -65,6 +65,8 @@ public class EnemyHealth : MonoBehaviour {
 	public void EnemyTakeDamage (float amount) {
 		realHealth -= amount;
 
+//		Debug.Log ("The current health is " + realHealth);
+
 		if (realHealth <= 0) {
 			realHealth = 0;
 			EnemyDying ();
@@ -80,7 +82,7 @@ public class EnemyHealth : MonoBehaviour {
 		enemyIsHit = false;
 		anim.SetBool (ANIMATION_BE_ATTACKED, true);
 		anim.SetBool (ANIMATION_ATTACK, false);
-		transform.Translate (Vector3.back * 0.5f);
+		transform.Translate (Vector3.back * 0.4f);
 	}
 
 	void StopEnemyHit () {

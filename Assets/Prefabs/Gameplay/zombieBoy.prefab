@@ -2050,8 +2050,8 @@ MonoBehaviour:
   enemyDeathSound: {fileID: 8300000, guid: 14ceedac8f72ed44bbb0d0b743104faa, type: 3}
   deathEffect: {fileID: 100004, guid: dcd9cd85101f2df48b9f94d6a44227fb, type: 2}
   deathEffectPoint: {fileID: 4257042383273874}
-  attackPointOne: {fileID: 0}
-  attackPointTwo: {fileID: 0}
+  attackPointOne: {fileID: 1524252553093278}
+  attackPointTwo: {fileID: 1631982830562030}
 --- !u!114 &114647181215993194
 MonoBehaviour:
   m_ObjectHideFlags: 1

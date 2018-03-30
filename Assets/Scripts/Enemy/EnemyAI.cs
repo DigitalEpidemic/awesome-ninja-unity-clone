@@ -63,7 +63,7 @@ public class EnemyAI : MonoBehaviour {
 				navAgent.isStopped = false; // navAgent.Resume ();
 			} else {
 				navAgent.isStopped = true; // navAgent.Stop ();
-				if (distance > 2.5f) {
+				if (distance > 2f) {
 					Chase ();
 				} else {
 					Attack ();

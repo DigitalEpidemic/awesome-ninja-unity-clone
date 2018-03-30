@@ -35,7 +35,7 @@ public class EnemyAI : MonoBehaviour {
 		anim = GetComponent<Animator> ();
 
 		player = GameObject.FindGameObjectWithTag ("Player").transform;
-		playerHealth = GetComponent<PlayerHealth> ();
+		playerHealth = player.gameObject.GetComponent<PlayerHealth> ();
 
 		zombieTransform = this.transform;
 		enemyHealth = GetComponent<EnemyHealth> ();

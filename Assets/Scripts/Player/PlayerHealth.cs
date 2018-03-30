@@ -31,8 +31,8 @@ public class PlayerHealth : MonoBehaviour {
 
 		// Set health text and slider value
 
-		bossTransform = GameObject.FindGameObjectWithTag ("Boss").transform;
-		bossHealth = bossTransform.gameObject.GetComponent<BossHealth> ();
+//		bossTransform = GameObject.FindGameObjectWithTag ("Boss").transform;
+//		bossHealth = bossTransform.gameObject.GetComponent<BossHealth> ();
 	}
 
 	void Update () {
@@ -45,13 +45,13 @@ public class PlayerHealth : MonoBehaviour {
 			StopPlayerDeathAnimation ();
 		}
 
-//		if (realHealth >= 100) {
-//			realHealth = 100f;
-//		}
-
-		if (bossHealth.realHealth <= 0) {
-			Victory ();
+		if (realHealth >= 100) {
+			realHealth = 100f;
 		}
+
+//		if (bossHealth.realHealth <= 0) {
+//			Victory ();
+//		}
 
 		if (victory) {
 			StopVictoryAnimation ();

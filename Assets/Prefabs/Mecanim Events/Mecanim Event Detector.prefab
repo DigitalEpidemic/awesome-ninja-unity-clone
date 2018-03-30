@@ -236,4 +236,75 @@ MonoBehaviour:
         conditions: []
       critical: 0
       isEnable: 1
+  - animatorController: {fileID: 9100000, guid: 9979e87ed0868b3489bd98a74e9ff480,
+      type: 2}
+    layer: 0
+    stateNameHash: -44861523
+    events:
+    - functionName: EnemyAttackOneStart
+      normalizedTime: 0.21
+      paramType: 4
+      intParam: 0
+      floatParam: 0
+      stringParam: 
+      boolParam: 1
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+    - functionName: EnemyAttackOne
+      normalizedTime: 0.22
+      paramType: 4
+      intParam: 0
+      floatParam: 0
+      stringParam: 
+      boolParam: 1
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+    - functionName: EnemyAttackOneEnd
+      normalizedTime: 0.27
+      paramType: 4
+      intParam: 0
+      floatParam: 0
+      stringParam: 
+      boolParam: 1
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+    - functionName: EnemyAttackTwoStart
+      normalizedTime: 0.59
+      paramType: 4
+      intParam: 0
+      floatParam: 0
+      stringParam: 
+      boolParam: 1
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+    - functionName: EnemyAttackTwo
+      normalizedTime: 0.63
+      paramType: 4
+      intParam: 0
+      floatParam: 0
+      stringParam: 
+      boolParam: 1
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+    - functionName: EnemyAttackTwoEnd
+      normalizedTime: 0.65
+      paramType: 4
+      intParam: 0
+      floatParam: 0
+      stringParam: 
+      boolParam: 1
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
   lastEdit: {fileID: 0}

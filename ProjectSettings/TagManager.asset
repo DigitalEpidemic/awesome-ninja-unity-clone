@@ -8,6 +8,7 @@ TagManager:
   - explosion
   - missile
   - Enemy
+  - Boss
   layers:
   - Default
   - TransparentFX

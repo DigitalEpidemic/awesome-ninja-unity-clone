@@ -71,6 +71,18 @@ public class EnemyAI : MonoBehaviour {
 				transform.LookAt (player);
 			}
 		}
+
+		if (enemyHealth.realHealth <= 0) {
+			col.enabled = false;
+		}
+
+		if (playerHealth.realHealth <= 0) {
+			EnemyVictory ();
+		}
+
+		if (victory) {
+			StopVictoryAnimation ();
+		}
 	}
 
 	void Search () {
@@ -101,6 +113,17 @@ public class EnemyAI : MonoBehaviour {
 
 	void Attack () {
 		anim.SetBool (ANIMATION_ATTACK, true);
+	}
+
+	void EnemyVictory () {
+		anim.SetBool (ANIMATION_VICTORY, true);
+		victory = true;
+	}
+
+	void StopVictoryAnimation () {
+		if (anim.GetCurrentAnimatorStateInfo (0).IsName(BASE_LAYER_STAND)) {
+			anim.SetBool (ANIMATION_VICTORY, false);
+		}
 	}
 
 } // EnemyAI

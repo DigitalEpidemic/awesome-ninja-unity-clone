@@ -2012,6 +2012,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f18ef72c94a36742a0ff7789997dee5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  radius: 0.8
+  hitPoint: {fileID: 4302368175833154}
+  damageCount: 1
 --- !u!114 &114631799376350208
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2023,6 +2029,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f18ef72c94a36742a0ff7789997dee5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  radius: 0.8
+  hitPoint: {fileID: 4279656377615590}
+  damageCount: 1
 --- !u!114 &114632714427989228
 MonoBehaviour:
   m_ObjectHideFlags: 1

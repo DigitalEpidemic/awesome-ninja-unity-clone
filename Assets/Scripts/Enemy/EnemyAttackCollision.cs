@@ -4,13 +4,33 @@ using UnityEngine;
 
 public class EnemyAttackCollision : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
+	public LayerMask playerLayer;
+	public float radius;
+	private bool collided;
+
+	public Transform hitPoint;
+	public float damageCount;
+
+	private PlayerHealth playerHealth;
+
+	void Awake () {
+		playerHealth = GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerHealth> ();
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
-		
+		Collider[] hits = Physics.OverlapSphere (hitPoint.position, radius, playerLayer);
+
+		foreach (Collider c in hits) {
+			if (c.isTrigger) {
+				continue;
+			}
+			collided = true;
+		}
+
+		if (collided) {
+			playerHealth.TakeDamage (damageCount);
+		}
+
 	}
-}
+
+} // EnemyAttackCollision

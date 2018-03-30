@@ -73,6 +73,8 @@ public class PlayerHealth : MonoBehaviour {
 	public void TakeDamage (float amount) {
 		realHealth -= amount;
 
+//		Debug.Log ("Current health is " + realHealth);
+
 		if (realHealth <= 0) {
 			realHealth = 0;
 		}

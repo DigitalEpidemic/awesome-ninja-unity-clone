@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemyAI : MonoBehaviour {
 
@@ -25,6 +26,10 @@ public class EnemyAI : MonoBehaviour {
 
 	private string BASE_LAYER_STAND = "Base Layer.Stand";
 
+	private NavMeshAgent navAgent;
+	public Transform[] navPoints;
+	private int navigationIndex;
+
 	void Awake () {
 		col = GetComponent<CapsuleCollider> ();
 		anim = GetComponent<Animator> ();
@@ -34,18 +39,57 @@ public class EnemyAI : MonoBehaviour {
 
 		zombieTransform = this.transform;
 		enemyHealth = GetComponent<EnemyHealth> ();
+
+		navAgent = GetComponent<NavMeshAgent> ();
+		navigationIndex = Random.Range (0, navPoints.Length);
+		navAgent.SetDestination (navPoints [navigationIndex].position);
 	}
 
 	void Update () {
 		float distance = Vector3.Distance (zombieTransform.position, player.position);
 
+//		if (enemyHealth.realHealth > 0) {
+//			if (distance > 2.5f) {
+//				Chase ();
+//			} else {
+//				Attack ();
+//			}
+//			transform.LookAt (player);
+//		}
+
 		if (enemyHealth.realHealth > 0) {
-			if (distance > 2.5f) {
-				Chase ();
+			if (distance > 7f) {
+				Search ();
+				navAgent.isStopped = false; // navAgent.Resume ();
 			} else {
-				Attack ();
+				navAgent.isStopped = true; // navAgent.Stop ();
+				if (distance > 2.5f) {
+					Chase ();
+				} else {
+					Attack ();
+				}
+				transform.LookAt (player);
 			}
-			transform.LookAt (player);
+		}
+	}
+
+	void Search () {
+		if (navAgent.remainingDistance <= 0.5f) {
+			anim.SetFloat (ANIMATION_SPEED, 0f);
+			anim.SetBool (ANIMATION_ATTACK, false);
+			anim.SetBool (ANIMATION_RUN, false);
+
+			if (navigationIndex == navPoints.Length - 1) {
+				navigationIndex = 0;
+			} else {
+				navigationIndex++;
+			}
+			navAgent.SetDestination (navPoints [navigationIndex].position);
+
+		} else {
+			anim.SetFloat (ANIMATION_SPEED, 1f);
+			anim.SetBool (ANIMATION_ATTACK, false);
+			anim.SetBool (ANIMATION_RUN, false);
 		}
 	}
 

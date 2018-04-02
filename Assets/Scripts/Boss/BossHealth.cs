@@ -39,6 +39,8 @@ public class BossHealth : MonoBehaviour {
 	public void BossTakeDamage (float amount) {
 		realHealth -= amount;
 
+		Debug.Log ("BOSS TOOK DAMAGE- HEALTH IS " + realHealth);
+
 		if (realHealth <= 0) {
 			realHealth = 0;
 			BossDying ();

@@ -17254,6 +17254,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02b9d2fe3d4d1bc4391a211c43f0f910, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bossLayer:
+    serializedVersion: 2
+    m_Bits: 2048
+  radius: 1.5
+  damageEffect: {fileID: 100002, guid: 23aed32f22650944091fb538a9ace530, type: 2}
+  damageCount: 5
 --- !u!114 &114428339249574328
 MonoBehaviour:
   m_ObjectHideFlags: 1

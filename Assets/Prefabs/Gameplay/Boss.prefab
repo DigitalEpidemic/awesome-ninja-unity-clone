@@ -178,6 +178,8 @@ GameObject:
   - component: {fileID: 8200000}
   - component: {fileID: 114493775267082218}
   - component: {fileID: 114489617073255200}
+  - component: {fileID: 114774117933392464}
+  - component: {fileID: 114423543221816252}
   m_Layer: 11
   m_Name: Boss
   m_TagString: Boss
@@ -16151,6 +16153,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4507569852660846}
+  - component: {fileID: 114860737451962576}
   m_Layer: 0
   m_Name: Hit Point
   m_TagString: Untagged
@@ -16191,7 +16194,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1386556302262758}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.352, y: 0.92, z: -0.586}
+  m_LocalPosition: {x: -0.277, y: 0.879, z: -0.605}
   m_LocalScale: {x: 1.0000001, y: 1.0000004, z: 1.0000006}
   m_Children: []
   m_Father: {fileID: 400132}
@@ -16234,6 +16237,20 @@ MonoBehaviour:
   subdivisions: 4
   _base: {fileID: 4139590137165418}
   _tip: {fileID: 4583161670390922}
+--- !u!114 &114423543221816252
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b19adf659a2ac70498d118ca11a36f17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animatorController: {fileID: 9100000, guid: 26b6662d25a427d4e90237d7487f35ab, type: 2}
+  animator: {fileID: 9500000}
+  emitType: 0
 --- !u!114 &114489617073255200
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16268,6 +16285,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bdd7164c359d184c99e2d74cf371f64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114774117933392464
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe9f68a45ebd53941a28b475597b23b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skill3: {fileID: 100014, guid: 2f8ef9eb56c6f1d46a58225698863a6f, type: 2}
+  skill3_Point: {fileID: 100154}
+  earthHit: {fileID: 8300000, guid: f3d13f3566aab4de597b752c72c81478, type: 3}
+  skill1: {fileID: 100010, guid: 7133a6e6dd0f30142b501f9b4f7206b4, type: 2}
+  skill1_Point1: {fileID: 100112}
+  skill1_Point2: {fileID: 100372}
+  skill1_Point3: {fileID: 100124}
+  skill1_Point4: {fileID: 100176}
+  skill1_Point5: {fileID: 100030}
+  skill1_Point6: {fileID: 100376}
+  skill1_Point7: {fileID: 100384}
+  skill1_Point8: {fileID: 100274}
+  skill1_Point9: {fileID: 100188}
+  skill1_Point10: {fileID: 100010}
+  sword: {fileID: 100132}
+  hitPoint: {fileID: 1386556302262758}
+--- !u!114 &114860737451962576
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1386556302262758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f18ef72c94a36742a0ff7789997dee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  radius: 0.3
+  hitPoint: {fileID: 4507569852660846}
+  damageCount: 10
 --- !u!135 &135478687143166088
 SphereCollider:
   m_ObjectHideFlags: 1

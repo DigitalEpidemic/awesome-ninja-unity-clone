@@ -3755,7 +3755,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100112}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.5764213, y: 3.4999998, z: 2.477443}
+  m_LocalPosition: {x: -0.516, y: 3.4999998, z: 2.477443}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400022}
@@ -4206,7 +4206,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100176}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.8205012, y: 3.4999998, z: 2.419601}
+  m_LocalPosition: {x: 1.453, y: 3.4999998, z: 2.419601}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400022}
@@ -5588,7 +5588,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100372}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.0414563, y: 3.4999998, z: 2.7784564}
+  m_LocalPosition: {x: 0.706, y: 3.4999998, z: 2.7784564}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400022}
@@ -16160,7 +16160,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4063563877595254
 Transform:
   m_ObjectHideFlags: 1
@@ -16194,7 +16194,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1386556302262758}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.277, y: 0.879, z: -0.605}
+  m_LocalPosition: {x: -0.025, y: 0.982, z: -0.646}
   m_LocalScale: {x: 1.0000001, y: 1.0000004, z: 1.0000006}
   m_Children: []
   m_Father: {fileID: 400132}
@@ -16274,6 +16274,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   realHealth: 200
+  deathSound: {fileID: 8300000, guid: 93f6fe213dfe24dcda9923ebfb9492f6, type: 3}
 --- !u!114 &114594557075286036
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16326,7 +16327,7 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 512
-  radius: 0.3
+  radius: 0.6
   hitPoint: {fileID: 4507569852660846}
   damageCount: 10
 --- !u!135 &135478687143166088

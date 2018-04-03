@@ -236,6 +236,33 @@ MonoBehaviour:
         conditions: []
       critical: 0
       isEnable: 1
+  - animatorController: {fileID: 9100000, guid: 8db498fa3564d0c49914eaba533aef2f,
+      type: 2}
+    layer: 0
+    stateNameHash: -1993454120
+    events:
+    - functionName: FootStepOne
+      normalizedTime: 0.25
+      paramType: 4
+      intParam: 0
+      floatParam: 0
+      stringParam: 
+      boolParam: 1
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+    - functionName: FootStepTwo
+      normalizedTime: 0.75
+      paramType: 4
+      intParam: 0
+      floatParam: 0
+      stringParam: 
+      boolParam: 1
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
   - animatorController: {fileID: 9100000, guid: 9979e87ed0868b3489bd98a74e9ff480,
       type: 2}
     layer: 0

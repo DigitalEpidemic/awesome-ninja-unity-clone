@@ -647,9 +647,8 @@ GameObject:
   - component: {fileID: 1389318105}
   - component: {fileID: 1389318102}
   - component: {fileID: 1389318104}
-  - component: {fileID: 1389318103}
   m_Layer: 0
-  m_Name: Camera
+  m_Name: UI Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -691,13 +690,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &1389318103
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1389318101}
-  m_Enabled: 1
 --- !u!124 &1389318104
 Behaviour:
   m_ObjectHideFlags: 0
@@ -911,6 +903,7 @@ GameObject:
   - component: {fileID: 1780647363}
   - component: {fileID: 1780647362}
   - component: {fileID: 1780647361}
+  - component: {fileID: 1780647364}
   m_Layer: 5
   m_Name: Attack Button
   m_TagString: Untagged
@@ -1010,6 +1003,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1780647359}
+--- !u!114 &1780647364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1780647359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b71985ca7c0cfb4c9c567159502ac48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1923982077
 GameObject:
   m_ObjectHideFlags: 0

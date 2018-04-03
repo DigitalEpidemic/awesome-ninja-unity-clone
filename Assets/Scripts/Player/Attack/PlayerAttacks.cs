@@ -73,6 +73,14 @@ public class PlayerAttacks : MonoBehaviour {
 		HandleButtonPresses ();
 	}
 
+	public void AttackButtonPressed () {
+		anim.SetBool (ANIMATION_ATTACK, true);
+	}
+
+	public void AttackButtonReleased () {
+		anim.SetBool (ANIMATION_ATTACK, false);
+	}
+
 	void HandleButtonPresses () {
 		if (Input.GetKeyDown (KeyCode.LeftControl)) {
 			anim.SetBool (ANIMATION_ATTACK, true);

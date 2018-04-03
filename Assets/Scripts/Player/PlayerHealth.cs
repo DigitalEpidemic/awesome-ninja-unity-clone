@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour {
 
@@ -10,8 +11,9 @@ public class PlayerHealth : MonoBehaviour {
 	private bool playerDead;
 	private bool playerIsHit;
 
-	// private Slider healthSlider;
-	// private Text healthText;
+	private Slider healthSlider;
+	private Text healthText;
+	private GameObject healthBar;
 
 	private BossHealth bossHealth;
 	private Transform bossTransform;
@@ -26,10 +28,13 @@ public class PlayerHealth : MonoBehaviour {
 
 	void Awake () {
 		anim = GetComponent<Animator> ();
-		//  healthSlider = GameObject.Find ();
-		//  healthText = GameObject.Find ();
 
-		// Set health text and slider value
+		healthSlider = GameObject.Find ("Health Foreground").GetComponent<Slider> ();
+		healthText = GameObject.Find ("Health Text").GetComponent<Text> ();
+		healthBar = GameObject.Find ("Health Foreground");
+
+		healthText.text = realHealth.ToString ();
+		healthSlider.value = realHealth;
 
 //		bossTransform = GameObject.FindGameObjectWithTag ("Boss").transform;
 //		bossHealth = bossTransform.gameObject.GetComponent<BossHealth> ();
@@ -77,11 +82,12 @@ public class PlayerHealth : MonoBehaviour {
 
 		if (realHealth <= 0) {
 			realHealth = 0;
+			healthBar.SetActive (false);
 		}
 
 		if (amount > 0) {
-			// healthText.text = realHealth.ToString ();
-			// healthslider.value = realHealth;
+			healthText.text = realHealth.ToString ();
+			healthSlider.value = realHealth;
 			playerIsHit = true;
 		}
 	}

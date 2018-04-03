@@ -81,6 +81,30 @@ public class PlayerAttacks : MonoBehaviour {
 		anim.SetBool (ANIMATION_ATTACK, false);
 	}
 
+	public void SkillOneButtonPressed () {
+		if (skillOne_NotUsed) {
+			skillOne_NotUsed = false;
+			anim.SetBool (ANIMATION_SKILL_ONE, true);
+			StartCoroutine (ResetSkills (1));
+		}
+	}
+
+	public void SkillTwoButtonPressed () {
+		if (skillTwo_NotUsed) {
+			skillTwo_NotUsed = false;
+			anim.SetBool(ANIMATION_SKILL_TWO, true);
+			StartCoroutine (ResetSkills (2));
+		}
+	}
+
+	public void SkillThreeButtonPressed () {
+		if (skillThree_NotUsed) {
+			skillThree_NotUsed = false;
+			anim.SetBool(ANIMATION_SKILL_THREE, true);
+			StartCoroutine (ResetSkills (3));
+		}
+	}
+
 	void HandleButtonPresses () {
 		if (Input.GetKeyDown (KeyCode.LeftControl)) {
 			anim.SetBool (ANIMATION_ATTACK, true);
